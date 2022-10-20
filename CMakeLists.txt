@@ -4,7 +4,7 @@ project(ReadLastN VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(ctci_cpp_solutions main.cpp readlastn.cpp readlastn.hpp)
+add_executable(ctci_cpp_solutions main.cpp printlastk.cpp printlastk.hpp)
 
 set_property(TARGET ctci_cpp_solutions PROPERTY CXX_STANDARD 17)
 

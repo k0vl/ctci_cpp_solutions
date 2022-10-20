@@ -1,11 +1,12 @@
 #include <iostream>
 #include <filesystem>
-#include "readlastn.hpp"
+#include "printlastk.hpp"
 
 int main(int argc, char** argv) {
-    std::cout << "Main\n";
-    std::string path = "C:\\Users\\kovlv\\Projects\\read_last_n\\test.txt";
+    std::string path = "..\\..\\test.txt";
     if(std::filesystem::exists(path)){
-        PrintLastNLines(path);
+        PrintLastKLines(10, path);
+    }else{
+        std::cout << "file " << path << " does not exist" << std::endl;
     }
 }
